@@ -24,7 +24,9 @@ window.onload = function() {
 	var resize = function(e){
   		if (window.innerWidth > 600) {
   			menuList.style.display = "block";
-  		} 
+  		} else {
+  			menuList.style.display = "none";
+  		}
 	};
 
 	(function(){
