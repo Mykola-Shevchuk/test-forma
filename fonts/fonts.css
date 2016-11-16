@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'BauhausC-Medium';
+	src: url('BauhausC-Medium/bauhausc-medium.eot');
+	src: url('BauhausC-Medium/bauhausc-medium.eot?#iefix') format('embedded-opentype'),
+		url('BauhausC-Medium/bauhausc-medium.woff') format('woff'),
+		url('BauhausC-Medium/bauhausc-medium.ttf') format('truetype'),
+		url('BauhausC-Medium/bauhausc-medium.svg') format('svg');
+}

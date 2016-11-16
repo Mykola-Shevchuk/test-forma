@@ -1,0 +1,332 @@
+@import url(../fonts/fonts.css);
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tahoma;
+
+}
+
+/* Шапка сайта */
+
+header {
+	height: 150px;
+}
+
+.line-top-header {
+	height: 5px;
+    background-color: #ff3722;
+}
+
+h1.logo {
+    line-height: 150px;
+    font-size: 50px;
+    margin-left: 50px;
+    color: #232323;
+    font-family: 'BauhausC-Medium';
+}
+
+/* Навигация */
+
+nav {
+	background: #ff3722;
+}
+
+nav:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav ul {
+	width: 90%;
+	margin-left: 5%;
+}
+
+nav li {
+	list-style: none;
+	float: left;
+}
+
+nav a {
+	padding: 20px;
+	display: block;
+	color: #fff;
+	font-family: 'BauhausC-Medium';
+}
+
+nav a:hover {
+	background-color: #f3220d;
+}
+
+.sub-menu {
+	width: 160px;
+    height: 70px;
+    background: url(../img/menu-icon.png) no-repeat left 20px center;
+    display: none;
+    text-align: right;
+    color: #fff;
+    font-size: 25px;
+    line-height: 70px;
+    font-family: 'BauhausC-Medium';
+    cursor: pointer;
+}
+
+.enter {
+	float: right;
+}
+
+main {
+	background-color: #f5f0ee;
+	overflow: hidden;
+}
+
+
+/* Элементы формы входа */
+
+.authorize-block {
+	width: 600px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 50px;
+	border: 2px solid #c0c0c0;
+	border-radius: 0px 85px 85px 85px;
+	height: 400px;
+	font-size: 14px;
+}
+
+.authorize-block a {
+	color: #1c4219;
+}
+
+.form-titles {
+	background: url('../img/form_icon.jpg') no-repeat; 
+}
+
+.form-titles h1 {
+	padding: 20px 20px 0px 20px;
+	font-family: 'BauhausC-Medium';
+	font-size: 35px;
+}
+
+.form-titles p {
+	padding: 15px 0px 0px 20px;
+}
+
+.form-titles:after {
+	content: '';
+	display: table;
+	clear: both;
+	width: 100%;
+	padding-top: 10px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.inputs-block {
+	float: right;
+}
+
+.inputs-block label:not(.save-me) {
+	text-align: right;
+    width: 100px;
+    color: red;
+    display: inline-block;
+    font-family: 'BauhausC-Medium';
+    color: #303030;
+    font-weight: bold;
+    color: #575a5a;
+
+}
+
+label span {
+	color: red;
+}
+
+.inputs-block input:not([type="checkbox"]) {
+	margin-top: 20px;
+	width: 300px;
+	height: 30px;
+	font-size: 18px;
+	text-indent: 10px;
+}
+
+.save-me-block {
+	margin-left: 103px;
+	font-family: 'BauhausC-Medium';
+}
+
+.save-me {
+	font-weight: bold;
+	font-family: 'BauhausC-Medium';
+	color: #575a5a;
+	display: block;
+    float: left;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.inputs-block [type="checkbox"], .fogot-password {
+	margin-top: 20px;
+	float: left;
+}
+
+.fogot-password {
+	margin-left: 103px;
+}
+
+.btn {
+	width: 170px;
+    background: #1c4219;
+    border: 0;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 18px;
+    border-radius: 20px 20px 0px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+
+/* Media queries */
+
+
+/* MAX WIDTH 650px */
+
+@media (max-width: 650px) {
+  .authorize-block {
+  	width: 500px;
+  	padding: 20px;
+  }
+
+  .btn {
+  	top: 80px;
+  }
+}
+
+/* MAX WIDTH 600px */
+
+@media (max-width: 600px) {
+  nav ul {
+  	display: none;
+  	width: 80%;
+  	margin-left: 10%;
+  }
+
+  nav li {
+  	float: none;
+  }
+
+  .enter {
+  	float: none;
+  	margin-bottom: 20px;
+  }
+
+  .sub-menu {
+  	display: block;
+  }
+
+
+}
+
+/* MAX WIDTH 530px */
+
+@media (max-width: 530px) {
+
+	.inputs-block label:not(.save-me) {
+		display: none;
+	}
+
+	.save-me-block {
+		margin-left: 0;
+	}
+
+	.fogot-password {
+		margin-left: 0;
+	}
+
+	.authorize-block {
+		width: 380px;
+	}
+
+	.inputs-block {
+		float: none;
+		margin: 0px auto;
+    	width: 300px
+	}
+
+}
+
+
+/* MAX WIDTH 400px */
+
+@media (max-width: 400px) {
+
+	h1.logo {
+		font-size: 30px;
+    	margin-left: 25px;
+	}
+
+	.authorize-block {
+		width: 300px;
+		height: 350px;
+	}
+
+	.inputs-block {
+    	width: 250px
+	}
+
+	.btn {
+    	top: 30px;
+	}
+
+	.inputs-block input:not([type="checkbox"]) {
+		width: 100%;
+	}
+
+}
+
+/* MAX WIDTH 320px */
+
+@media (max-width: 320px) {
+
+	.authorize-block {
+		width: 250px;
+	}
+
+	.inputs-block {
+    	width: 200px
+	}
+
+}
+
+/* MAX WIDTH 320px */
+
+@media (max-width: 270px) {
+
+	.authorize-block {
+	    width: 200px;
+	    border-radius: 0px 40px 40px 40px;
+	}
+
+	.form-titles h1 {
+	    font-size: 24px;
+	}
+
+	.inputs-block {
+    	width: 150px
+	}
+
+	.btn {
+    	top: 23px;
+		width: 150px;
+	}
+}
